@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>语义方向分类体系 · Semantic Direction Taxonomy</title>
+  <meta name="description" content="谓词层面的语义方向分类：大类、子类与叶方向，并列出典型的英语表现形式。">
+  <meta name="theme-color" content="#f3efe6">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">跳到正文</a>
+  <header class="topbar">
+    <button id="menu" type="button" aria-expanded="false" aria-controls="sidebar">目录</button>
+    <a class="brand" href="#top">语义方向分类体系</a>
+    <form class="search" role="search" id="search-form">
+      <label class="sr" for="q">搜索</label>
+      <input id="q" type="search" placeholder="搜索中文名、英文标签或表现形式" autocomplete="off" enterkeyhint="search">
+      <p id="filter-status" class="filter-status" aria-live="polite"></p>
+    </form>
+  </header>
+  <div class="shell">
+    <aside id="sidebar" aria-label="分类目录">
+      <div class="side-tools">
+        <p class="side-label">目录</p>
+        <div class="side-actions">
+          <button type="button" id="expand-all">全部展开</button>
+          <button type="button" id="collapse-all">全部收起</button>
+        </div>
+      </div>
+      <nav id="tree"></nav>
+    </aside>
+    <div id="backdrop" hidden></div>
+    <main id="content">
+      <div class="column" id="top">
+        <p id="loading">正在载入分类…</p>
+        <article id="article" hidden></article>
+      </div>
+    </main>
+  </div>
+  <noscript>
+    <p class="noscript">此页由 data/taxonomy.json 渲染，需要启用 JavaScript。</p>
+  </noscript>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

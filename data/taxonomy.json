@@ -1,0 +1,2286 @@
+{
+  "meta": {
+    "title": "语义方向分类体系",
+    "titleEn": "Semantic Direction Taxonomy",
+    "intro": [
+      "语言表达里，可指称单元（RU, Referable Unit）是被谈论的对象：它开放而无尽，本表不收录。",
+      "语义方向是小句谓词核心赋予一个可指称单元的取向，也就是对它作出哪一类陈述；这个集合封闭，可以逐条枚举。",
+      "同一个方向有多个英语表层形式，例如「存在」可以是 there be、exist、occur。",
+      "只计谓词层面的意义：Earth is round 的方向由 is 承载，不由状语或命题间的连接成分承载。"
+    ],
+    "exclusions": [
+      {
+        "name": "空间与位置",
+        "reason": "处所状语和静态方位不给可指称单元定方向。"
+      },
+      {
+        "name": "条件与假设",
+        "reason": "if、unless 连接命题，属于结构层，不是谓词方向。"
+      },
+      {
+        "name": "小句连接",
+        "reason": "because、although、but 连接命题；cause、lead to 等谓词计入因果。"
+      },
+      {
+        "name": "时间与处所状语",
+        "reason": "时间、处所状语只修饰小句；begin、go、arrive 仍各自成向。"
+      },
+      {
+        "name": "极性算子",
+        "reason": "not 等否定叠合在任何方向之上，不单独立类。"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "existence",
+      "name": "存在与发生",
+      "en": "Existence and occurrence",
+      "groups": [
+        {
+          "id": "existence-status",
+          "name": "存在状况",
+          "en": "Ontological status",
+          "leaves": [
+            {
+              "id": "exist",
+              "name": "存在",
+              "en": "existence",
+              "representations": [
+                "there be",
+                "exist",
+                "occur",
+                "there exist",
+                "be in existence",
+                "obtain"
+              ]
+            },
+            {
+              "id": "appear",
+              "name": "出现",
+              "en": "appearance",
+              "representations": [
+                "appear",
+                "emerge",
+                "arise",
+                "come into being",
+                "turn up",
+                "materialize"
+              ]
+            },
+            {
+              "id": "disappear",
+              "name": "消失",
+              "en": "disappearance",
+              "representations": [
+                "disappear",
+                "vanish",
+                "cease to exist",
+                "fade away",
+                "die out",
+                "pass out of existence"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "existence-occurrence",
+          "name": "发生与平息",
+          "en": "Coming about",
+          "leaves": [
+            {
+              "id": "happen",
+              "name": "发生",
+              "en": "occurrence",
+              "representations": [
+                "happen",
+                "take place",
+                "come about",
+                "come to pass",
+                "transpire",
+                "befall"
+              ]
+            },
+            {
+              "id": "subside",
+              "name": "平息",
+              "en": "subsidence",
+              "representations": [
+                "subside",
+                "die down",
+                "peter out",
+                "ebb away",
+                "blow over",
+                "let up"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "name": "身份与属性",
+      "en": "Identity and attribution",
+      "groups": [
+        {
+          "id": "identity-ascription",
+          "name": "认定",
+          "en": "Ascription",
+          "leaves": [
+            {
+              "id": "identity",
+              "name": "身份等同",
+              "en": "identity",
+              "representations": [
+                "be",
+                "be identical with",
+                "be the same as",
+                "be one and the same",
+                "be none other than"
+              ]
+            },
+            {
+              "id": "classification",
+              "name": "类属归类",
+              "en": "classification",
+              "representations": [
+                "be",
+                "count as",
+                "qualify as",
+                "pass for",
+                "rank as",
+                "fall under"
+              ]
+            },
+            {
+              "id": "attribution",
+              "name": "属性述定",
+              "en": "attribution",
+              "representations": [
+                "be",
+                "prove to be",
+                "turn out to be",
+                "be characterized by",
+                "be marked by"
+              ]
+            },
+            {
+              "id": "role",
+              "name": "角色充当",
+              "en": "role",
+              "representations": [
+                "serve as",
+                "act as",
+                "function as",
+                "work as",
+                "double as"
+              ]
+            },
+            {
+              "id": "embodiment",
+              "name": "体现",
+              "en": "embodiment",
+              "representations": [
+                "embody",
+                "represent",
+                "personify",
+                "epitomize",
+                "typify",
+                "exemplify"
+              ]
+            },
+            {
+              "id": "signification",
+              "name": "意谓",
+              "en": "signification",
+              "representations": [
+                "mean",
+                "signify",
+                "denote",
+                "amount to",
+                "come down to",
+                "spell"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "identity-manner",
+          "name": "样态",
+          "en": "Appearance and persistence",
+          "leaves": [
+            {
+              "id": "seeming",
+              "name": "表象",
+              "en": "seeming",
+              "representations": [
+                "seem",
+                "appear",
+                "look",
+                "sound",
+                "feel",
+                "come across as"
+              ]
+            },
+            {
+              "id": "persistence",
+              "name": "保持如是",
+              "en": "persistence",
+              "representations": [
+                "remain",
+                "stay",
+                "keep",
+                "continue to be",
+                "hold"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "状态、变化与相位",
+      "en": "State, change, and phase",
+      "groups": [
+        {
+          "id": "state-holding",
+          "name": "状态",
+          "en": "State",
+          "leaves": [
+            {
+              "id": "state",
+              "name": "处于状态",
+              "en": "state",
+              "representations": [
+                "be",
+                "be in a state",
+                "find oneself",
+                "prevail"
+              ]
+            },
+            {
+              "id": "lasting",
+              "name": "状态持续",
+              "en": "lasting",
+              "representations": [
+                "persist",
+                "endure",
+                "linger",
+                "hold on",
+                "abide",
+                "drag on"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "state-change",
+          "name": "变化",
+          "en": "Change",
+          "leaves": [
+            {
+              "id": "transformation",
+              "name": "转变",
+              "en": "transformation",
+              "representations": [
+                "change",
+                "alter",
+                "shift",
+                "convert",
+                "transform",
+                "turn into"
+              ]
+            },
+            {
+              "id": "becoming",
+              "name": "成为",
+              "en": "becoming",
+              "representations": [
+                "become",
+                "get",
+                "grow",
+                "turn",
+                "come to be",
+                "end up"
+              ]
+            },
+            {
+              "id": "scalar-change",
+              "name": "增减",
+              "en": "scalar change",
+              "representations": [
+                "increase",
+                "decrease",
+                "rise",
+                "fall",
+                "decline",
+                "shrink"
+              ]
+            },
+            {
+              "id": "state-entry",
+              "name": "进入状态",
+              "en": "entry into a state",
+              "representations": [
+                "fall into",
+                "lapse into",
+                "sink into",
+                "get into",
+                "settle into"
+              ]
+            },
+            {
+              "id": "state-exit",
+              "name": "脱离状态",
+              "en": "exit from a state",
+              "representations": [
+                "snap out of",
+                "break out of",
+                "emerge from",
+                "grow out of",
+                "shake off"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "state-phase",
+          "name": "相位",
+          "en": "Phase",
+          "leaves": [
+            {
+              "id": "inception",
+              "name": "开始",
+              "en": "inception",
+              "representations": [
+                "begin",
+                "start",
+                "commence",
+                "set about",
+                "get under way"
+              ]
+            },
+            {
+              "id": "continuation",
+              "name": "延续",
+              "en": "continuation",
+              "representations": [
+                "continue",
+                "keep",
+                "go on",
+                "carry on",
+                "keep on",
+                "press on"
+              ]
+            },
+            {
+              "id": "cessation",
+              "name": "停止",
+              "en": "cessation",
+              "representations": [
+                "stop",
+                "cease",
+                "quit",
+                "discontinue",
+                "leave off",
+                "knock off"
+              ]
+            },
+            {
+              "id": "completion",
+              "name": "完成",
+              "en": "completion",
+              "representations": [
+                "finish",
+                "complete",
+                "end",
+                "conclude",
+                "wrap up",
+                "round off"
+              ]
+            },
+            {
+              "id": "suspension",
+              "name": "暂停",
+              "en": "suspension",
+              "representations": [
+                "pause",
+                "suspend",
+                "break off",
+                "interrupt",
+                "hold off"
+              ]
+            },
+            {
+              "id": "resumption",
+              "name": "恢复",
+              "en": "resumption",
+              "representations": [
+                "resume",
+                "restart",
+                "renew",
+                "pick up",
+                "return to"
+              ]
+            },
+            {
+              "id": "prospect",
+              "name": "将行",
+              "en": "prospect",
+              "representations": [
+                "be going to",
+                "be about to",
+                "be on the point of",
+                "be due to",
+                "be to"
+              ]
+            },
+            {
+              "id": "habit",
+              "name": "惯常",
+              "en": "habit",
+              "representations": [
+                "used to",
+                "tend to",
+                "be given to",
+                "be in the habit of",
+                "be wont to"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "name": "位移与运动",
+      "en": "Motion",
+      "groups": [
+        {
+          "id": "motion-path",
+          "name": "路径",
+          "en": "Path",
+          "leaves": [
+            {
+              "id": "going",
+              "name": "前往",
+              "en": "going",
+              "representations": [
+                "go",
+                "head",
+                "make for",
+                "proceed",
+                "set off",
+                "be bound for"
+              ]
+            },
+            {
+              "id": "coming",
+              "name": "来到",
+              "en": "coming",
+              "representations": [
+                "come",
+                "approach",
+                "draw near",
+                "near",
+                "close in",
+                "come over"
+              ]
+            },
+            {
+              "id": "departure",
+              "name": "离开",
+              "en": "departure",
+              "representations": [
+                "leave",
+                "depart",
+                "set out",
+                "go away",
+                "take off",
+                "start out"
+              ]
+            },
+            {
+              "id": "arrival",
+              "name": "到达",
+              "en": "arrival",
+              "representations": [
+                "arrive",
+                "reach",
+                "get to",
+                "land",
+                "pull in",
+                "make it to"
+              ]
+            },
+            {
+              "id": "passage",
+              "name": "经过",
+              "en": "passage",
+              "representations": [
+                "pass",
+                "cross",
+                "traverse",
+                "go by",
+                "pass through",
+                "cut across"
+              ]
+            },
+            {
+              "id": "return",
+              "name": "返回",
+              "en": "return",
+              "representations": [
+                "return",
+                "go back",
+                "come back",
+                "turn back",
+                "head back",
+                "double back"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "motion-loco",
+          "name": "移动",
+          "en": "Locomotion",
+          "leaves": [
+            {
+              "id": "locomotion",
+              "name": "自行移动",
+              "en": "locomotion",
+              "representations": [
+                "move",
+                "walk",
+                "run",
+                "travel",
+                "fly",
+                "drive"
+              ]
+            },
+            {
+              "id": "transport",
+              "name": "运送",
+              "en": "transport",
+              "representations": [
+                "carry",
+                "transport",
+                "bring",
+                "take",
+                "send",
+                "ship"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "name": "动作与施行",
+      "en": "Action",
+      "groups": [
+        {
+          "id": "action-performance",
+          "name": "施行",
+          "en": "Performance",
+          "leaves": [
+            {
+              "id": "performance",
+              "name": "施行",
+              "en": "performance",
+              "representations": [
+                "do",
+                "perform",
+                "carry out",
+                "execute",
+                "conduct",
+                "undertake"
+              ]
+            },
+            {
+              "id": "engagement",
+              "name": "从事",
+              "en": "engagement",
+              "representations": [
+                "engage in",
+                "take part in",
+                "go in for",
+                "practice",
+                "pursue",
+                "work at"
+              ]
+            },
+            {
+              "id": "use",
+              "name": "使用",
+              "en": "use",
+              "representations": [
+                "use",
+                "employ",
+                "apply",
+                "make use of",
+                "draw on",
+                "avail oneself of"
+              ]
+            },
+            {
+              "id": "undergoing",
+              "name": "经历",
+              "en": "undergoing",
+              "representations": [
+                "undergo",
+                "experience",
+                "go through",
+                "suffer",
+                "live through",
+                "be subjected to"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "action-outcome",
+          "name": "成否",
+          "en": "Success and failure",
+          "leaves": [
+            {
+              "id": "attempt",
+              "name": "尝试",
+              "en": "attempt",
+              "representations": [
+                "try",
+                "attempt",
+                "seek",
+                "endeavor",
+                "strive",
+                "have a go"
+              ]
+            },
+            {
+              "id": "achievement",
+              "name": "达成",
+              "en": "achievement",
+              "representations": [
+                "achieve",
+                "accomplish",
+                "attain",
+                "pull off",
+                "bring off",
+                "manage"
+              ]
+            },
+            {
+              "id": "failure",
+              "name": "未成",
+              "en": "failure",
+              "representations": [
+                "fail",
+                "fall short",
+                "miss",
+                "misfire",
+                "come to nothing",
+                "fall through"
+              ]
+            },
+            {
+              "id": "avoidance",
+              "name": "回避",
+              "en": "avoidance",
+              "representations": [
+                "avoid",
+                "refrain from",
+                "shun",
+                "abstain from",
+                "steer clear of",
+                "eschew"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creation",
+      "name": "创造与毁损",
+      "en": "Creation and destruction",
+      "groups": [
+        {
+          "id": "creation-making",
+          "name": "生成",
+          "en": "Making",
+          "leaves": [
+            {
+              "id": "creation",
+              "name": "创造",
+              "en": "creation",
+              "representations": [
+                "create",
+                "make",
+                "produce",
+                "generate",
+                "bring into being",
+                "form"
+              ]
+            },
+            {
+              "id": "construction",
+              "name": "建造",
+              "en": "construction",
+              "representations": [
+                "build",
+                "construct",
+                "erect",
+                "assemble",
+                "put together",
+                "put up"
+              ]
+            },
+            {
+              "id": "invention",
+              "name": "发明",
+              "en": "invention",
+              "representations": [
+                "invent",
+                "devise",
+                "design",
+                "contrive",
+                "come up with",
+                "think up"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "creation-undoing",
+          "name": "毁损与修复",
+          "en": "Undoing and repair",
+          "leaves": [
+            {
+              "id": "destruction",
+              "name": "毁坏",
+              "en": "destruction",
+              "representations": [
+                "destroy",
+                "ruin",
+                "wreck",
+                "demolish",
+                "obliterate",
+                "lay waste"
+              ]
+            },
+            {
+              "id": "damage",
+              "name": "损坏",
+              "en": "damage",
+              "representations": [
+                "damage",
+                "harm",
+                "impair",
+                "mar",
+                "spoil",
+                "scar"
+              ]
+            },
+            {
+              "id": "elimination",
+              "name": "消灭",
+              "en": "elimination",
+              "representations": [
+                "kill",
+                "annihilate",
+                "wipe out",
+                "exterminate",
+                "eliminate",
+                "do away with"
+              ]
+            },
+            {
+              "id": "restoration",
+              "name": "修复",
+              "en": "restoration",
+              "representations": [
+                "repair",
+                "fix",
+                "mend",
+                "restore",
+                "rebuild",
+                "patch up"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "possession",
+      "name": "领属与构成",
+      "en": "Possession and composition",
+      "groups": [
+        {
+          "id": "possession-having",
+          "name": "领属",
+          "en": "Possession",
+          "leaves": [
+            {
+              "id": "possession",
+              "name": "领有",
+              "en": "possession",
+              "representations": [
+                "have",
+                "own",
+                "possess",
+                "hold",
+                "be in possession of",
+                "have got"
+              ]
+            },
+            {
+              "id": "acquisition",
+              "name": "获得",
+              "en": "acquisition",
+              "representations": [
+                "get",
+                "obtain",
+                "acquire",
+                "gain",
+                "come by",
+                "secure"
+              ]
+            },
+            {
+              "id": "loss",
+              "name": "失去",
+              "en": "loss",
+              "representations": [
+                "lose",
+                "forfeit",
+                "part with",
+                "be deprived of",
+                "mislay",
+                "be stripped of"
+              ]
+            },
+            {
+              "id": "lack",
+              "name": "缺少",
+              "en": "lack",
+              "representations": [
+                "lack",
+                "be without",
+                "be short of",
+                "be devoid of",
+                "want for",
+                "go without"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "possession-composition",
+          "name": "构成",
+          "en": "Composition",
+          "leaves": [
+            {
+              "id": "composition",
+              "name": "构成",
+              "en": "composition",
+              "representations": [
+                "consist of",
+                "be composed of",
+                "be made up of",
+                "be formed of",
+                "comprise"
+              ]
+            },
+            {
+              "id": "inclusion",
+              "name": "包含",
+              "en": "inclusion",
+              "representations": [
+                "include",
+                "contain",
+                "embrace",
+                "encompass",
+                "take in",
+                "incorporate"
+              ]
+            },
+            {
+              "id": "membership",
+              "name": "属于",
+              "en": "membership",
+              "representations": [
+                "belong to",
+                "be part of",
+                "be a member of",
+                "fall within",
+                "be included in",
+                "pertain to"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transfer",
+      "name": "传递与交换",
+      "en": "Transfer and exchange",
+      "groups": [
+        {
+          "id": "transfer-giving",
+          "name": "授受",
+          "en": "Transfer",
+          "leaves": [
+            {
+              "id": "giving",
+              "name": "给予",
+              "en": "giving",
+              "representations": [
+                "give",
+                "grant",
+                "present",
+                "bestow",
+                "confer",
+                "hand"
+              ]
+            },
+            {
+              "id": "receiving",
+              "name": "接受",
+              "en": "receiving",
+              "representations": [
+                "receive",
+                "accept",
+                "take",
+                "be given",
+                "take delivery of"
+              ]
+            },
+            {
+              "id": "seizure",
+              "name": "夺取",
+              "en": "seizure",
+              "representations": [
+                "seize",
+                "grab",
+                "snatch",
+                "wrest",
+                "confiscate",
+                "take away"
+              ]
+            },
+            {
+              "id": "delivery",
+              "name": "递送",
+              "en": "delivery",
+              "representations": [
+                "deliver",
+                "pass",
+                "hand over",
+                "turn over",
+                "convey",
+                "pass on"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "transfer-exchange",
+          "name": "交换",
+          "en": "Exchange",
+          "leaves": [
+            {
+              "id": "exchange",
+              "name": "交换",
+              "en": "exchange",
+              "representations": [
+                "exchange",
+                "swap",
+                "trade",
+                "barter",
+                "interchange",
+                "switch"
+              ]
+            },
+            {
+              "id": "purchase",
+              "name": "购买",
+              "en": "purchase",
+              "representations": [
+                "buy",
+                "purchase",
+                "pay for",
+                "shop for",
+                "bargain for"
+              ]
+            },
+            {
+              "id": "sale",
+              "name": "出售",
+              "en": "sale",
+              "representations": [
+                "sell",
+                "vend",
+                "retail",
+                "auction off",
+                "put up for sale",
+                "dispose of"
+              ]
+            },
+            {
+              "id": "loan",
+              "name": "借贷",
+              "en": "loan",
+              "representations": [
+                "lend",
+                "loan",
+                "borrow",
+                "advance",
+                "have on loan"
+              ]
+            },
+            {
+              "id": "restitution",
+              "name": "归还",
+              "en": "restitution",
+              "representations": [
+                "return",
+                "give back",
+                "pay back",
+                "repay",
+                "hand back",
+                "refund"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "causation",
+      "name": "因果与使动",
+      "en": "Causation",
+      "groups": [
+        {
+          "id": "causation-cause",
+          "name": "致使",
+          "en": "Causation",
+          "leaves": [
+            {
+              "id": "causation",
+              "name": "致使",
+              "en": "causation",
+              "representations": [
+                "cause",
+                "bring about",
+                "lead to",
+                "result in",
+                "give rise to",
+                "produce"
+              ]
+            },
+            {
+              "id": "compulsion",
+              "name": "使役",
+              "en": "compulsion",
+              "representations": [
+                "make",
+                "have",
+                "get",
+                "force",
+                "compel",
+                "drive"
+              ]
+            },
+            {
+              "id": "inducement",
+              "name": "促使",
+              "en": "inducement",
+              "representations": [
+                "prompt",
+                "induce",
+                "spur",
+                "motivate",
+                "move",
+                "impel"
+              ]
+            },
+            {
+              "id": "origination",
+              "name": "源于",
+              "en": "origination",
+              "representations": [
+                "result from",
+                "stem from",
+                "arise from",
+                "come of",
+                "be due to",
+                "follow from"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "causation-constraint",
+          "name": "制约",
+          "en": "Constraint",
+          "leaves": [
+            {
+              "id": "prevention",
+              "name": "阻止",
+              "en": "prevention",
+              "representations": [
+                "prevent",
+                "stop",
+                "keep from",
+                "block",
+                "preclude",
+                "avert"
+              ]
+            },
+            {
+              "id": "allowance",
+              "name": "听任",
+              "en": "allowance",
+              "representations": [
+                "let",
+                "allow",
+                "permit",
+                "enable",
+                "leave alone"
+              ]
+            },
+            {
+              "id": "influence",
+              "name": "影响",
+              "en": "influence",
+              "representations": [
+                "affect",
+                "influence",
+                "impact",
+                "shape",
+                "bear on",
+                "act on"
+              ]
+            },
+            {
+              "id": "dependence",
+              "name": "依赖",
+              "en": "dependence",
+              "representations": [
+                "depend on",
+                "rely on",
+                "hinge on",
+                "rest on",
+                "be contingent on",
+                "hang on"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "name": "比较与度量",
+      "en": "Comparison and measurement",
+      "groups": [
+        {
+          "id": "comparison-compare",
+          "name": "比较",
+          "en": "Comparison",
+          "leaves": [
+            {
+              "id": "resemblance",
+              "name": "相似",
+              "en": "resemblance",
+              "representations": [
+                "resemble",
+                "be like",
+                "be similar to",
+                "take after",
+                "look like",
+                "smack of"
+              ]
+            },
+            {
+              "id": "difference",
+              "name": "相异",
+              "en": "difference",
+              "representations": [
+                "differ",
+                "differ from",
+                "vary",
+                "diverge",
+                "contrast with",
+                "be unlike"
+              ]
+            },
+            {
+              "id": "equality",
+              "name": "等同",
+              "en": "equality",
+              "representations": [
+                "equal",
+                "be equal to",
+                "match",
+                "be equivalent to",
+                "tally with",
+                "square with"
+              ]
+            },
+            {
+              "id": "excess",
+              "name": "超过",
+              "en": "excess",
+              "representations": [
+                "exceed",
+                "surpass",
+                "outdo",
+                "outstrip",
+                "go beyond",
+                "top"
+              ]
+            },
+            {
+              "id": "shortfall",
+              "name": "不及",
+              "en": "shortfall",
+              "representations": [
+                "fall short of",
+                "lag behind",
+                "trail",
+                "be less than",
+                "come short of"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "comparison-measure",
+          "name": "度量",
+          "en": "Measurement",
+          "leaves": [
+            {
+              "id": "cost",
+              "name": "计价",
+              "en": "cost",
+              "representations": [
+                "cost",
+                "be worth",
+                "sell for",
+                "be priced at",
+                "fetch",
+                "go for"
+              ]
+            },
+            {
+              "id": "weight",
+              "name": "称重",
+              "en": "weight",
+              "representations": [
+                "weigh",
+                "tip the scales at",
+                "scale at",
+                "weigh in at"
+              ]
+            },
+            {
+              "id": "extent",
+              "name": "度量",
+              "en": "extent",
+              "representations": [
+                "measure",
+                "span",
+                "stretch",
+                "extend",
+                "run to"
+              ]
+            },
+            {
+              "id": "quantity",
+              "name": "计数",
+              "en": "quantity",
+              "representations": [
+                "number",
+                "total",
+                "add up to",
+                "come to",
+                "amount to",
+                "count"
+              ]
+            },
+            {
+              "id": "time-taken",
+              "name": "耗时",
+              "en": "time taken",
+              "representations": [
+                "take",
+                "last",
+                "run",
+                "go on for",
+                "occupy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speech",
+      "name": "言说与交流",
+      "en": "Speech and communication",
+      "groups": [
+        {
+          "id": "speech-illocution",
+          "name": "表述",
+          "en": "Illocution",
+          "leaves": [
+            {
+              "id": "statement",
+              "name": "陈述",
+              "en": "statement",
+              "representations": [
+                "say",
+                "state",
+                "tell",
+                "remark",
+                "note",
+                "observe"
+              ]
+            },
+            {
+              "id": "assertion",
+              "name": "断言",
+              "en": "assertion",
+              "representations": [
+                "claim",
+                "assert",
+                "maintain",
+                "contend",
+                "allege",
+                "affirm"
+              ]
+            },
+            {
+              "id": "description",
+              "name": "描述",
+              "en": "description",
+              "representations": [
+                "describe",
+                "portray",
+                "depict",
+                "characterize",
+                "outline",
+                "sketch"
+              ]
+            },
+            {
+              "id": "question",
+              "name": "询问",
+              "en": "question",
+              "representations": [
+                "ask",
+                "inquire",
+                "question",
+                "query",
+                "ask after"
+              ]
+            },
+            {
+              "id": "reply",
+              "name": "应答",
+              "en": "reply",
+              "representations": [
+                "answer",
+                "reply",
+                "respond",
+                "retort",
+                "rejoin"
+              ]
+            },
+            {
+              "id": "denial",
+              "name": "否认",
+              "en": "denial",
+              "representations": [
+                "deny",
+                "refute",
+                "contradict",
+                "gainsay",
+                "rebut"
+              ]
+            },
+            {
+              "id": "commitment",
+              "name": "承诺",
+              "en": "commitment",
+              "representations": [
+                "promise",
+                "pledge",
+                "vow",
+                "swear",
+                "undertake",
+                "guarantee"
+              ]
+            },
+            {
+              "id": "command",
+              "name": "指令",
+              "en": "command",
+              "representations": [
+                "order",
+                "command",
+                "instruct",
+                "direct",
+                "bid"
+              ]
+            },
+            {
+              "id": "advice",
+              "name": "建议",
+              "en": "advice",
+              "representations": [
+                "suggest",
+                "advise",
+                "recommend",
+                "propose",
+                "urge"
+              ]
+            },
+            {
+              "id": "naming",
+              "name": "命名",
+              "en": "naming",
+              "representations": [
+                "name",
+                "call",
+                "term",
+                "dub",
+                "refer to",
+                "label"
+              ]
+            },
+            {
+              "id": "explanation",
+              "name": "解释",
+              "en": "explanation",
+              "representations": [
+                "explain",
+                "clarify",
+                "spell out",
+                "account for",
+                "elucidate",
+                "make clear"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speech-dialogue",
+          "name": "交流",
+          "en": "Dialogue",
+          "leaves": [
+            {
+              "id": "informing",
+              "name": "告知",
+              "en": "informing",
+              "representations": [
+                "inform",
+                "notify",
+                "let know",
+                "apprise",
+                "fill in",
+                "brief"
+              ]
+            },
+            {
+              "id": "discussion",
+              "name": "讨论",
+              "en": "discussion",
+              "representations": [
+                "discuss",
+                "talk over",
+                "debate",
+                "confer",
+                "talk about"
+              ]
+            },
+            {
+              "id": "agreement",
+              "name": "同意",
+              "en": "agreement",
+              "representations": [
+                "agree",
+                "concur",
+                "assent",
+                "go along with",
+                "accept"
+              ]
+            },
+            {
+              "id": "opposition",
+              "name": "反对",
+              "en": "opposition",
+              "representations": [
+                "disagree",
+                "object",
+                "dissent",
+                "take issue",
+                "protest",
+                "oppose"
+              ]
+            },
+            {
+              "id": "request",
+              "name": "请求",
+              "en": "request",
+              "representations": [
+                "request",
+                "ask for",
+                "beg",
+                "plead",
+                "appeal for"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cognition",
+      "name": "认知与感知",
+      "en": "Cognition and perception",
+      "groups": [
+        {
+          "id": "cognition-perception",
+          "name": "感知",
+          "en": "Perception",
+          "leaves": [
+            {
+              "id": "sight",
+              "name": "看见",
+              "en": "sight",
+              "representations": [
+                "see",
+                "look at",
+                "watch",
+                "observe",
+                "view",
+                "behold"
+              ]
+            },
+            {
+              "id": "hearing",
+              "name": "听见",
+              "en": "hearing",
+              "representations": [
+                "hear",
+                "listen to",
+                "overhear",
+                "catch",
+                "pick up"
+              ]
+            },
+            {
+              "id": "detection",
+              "name": "察觉",
+              "en": "detection",
+              "representations": [
+                "perceive",
+                "detect",
+                "notice",
+                "spot",
+                "discern",
+                "make out"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cognition-thought",
+          "name": "认知",
+          "en": "Cognition",
+          "leaves": [
+            {
+              "id": "knowledge",
+              "name": "知道",
+              "en": "knowledge",
+              "representations": [
+                "know",
+                "be aware of",
+                "be conscious of",
+                "realize"
+              ]
+            },
+            {
+              "id": "belief",
+              "name": "认为",
+              "en": "belief",
+              "representations": [
+                "think",
+                "believe",
+                "hold",
+                "suppose",
+                "reckon",
+                "figure"
+              ]
+            },
+            {
+              "id": "comprehension",
+              "name": "理解",
+              "en": "comprehension",
+              "representations": [
+                "understand",
+                "grasp",
+                "comprehend",
+                "follow",
+                "see",
+                "take in"
+              ]
+            },
+            {
+              "id": "memory",
+              "name": "记忆",
+              "en": "memory",
+              "representations": [
+                "remember",
+                "recall",
+                "recollect",
+                "bear in mind",
+                "call to mind",
+                "think back"
+              ]
+            },
+            {
+              "id": "forgetting",
+              "name": "遗忘",
+              "en": "forgetting",
+              "representations": [
+                "forget",
+                "lose track of",
+                "let slip",
+                "draw a blank",
+                "fail to recall"
+              ]
+            },
+            {
+              "id": "discovery",
+              "name": "得知",
+              "en": "discovery",
+              "representations": [
+                "learn",
+                "find out",
+                "discover",
+                "come to know",
+                "hear of",
+                "ascertain"
+              ]
+            },
+            {
+              "id": "inference",
+              "name": "推断",
+              "en": "inference",
+              "representations": [
+                "infer",
+                "conclude",
+                "deduce",
+                "reason",
+                "work out",
+                "gather"
+              ]
+            },
+            {
+              "id": "imagination",
+              "name": "想象",
+              "en": "imagination",
+              "representations": [
+                "imagine",
+                "picture",
+                "envision",
+                "conceive",
+                "fancy",
+                "dream"
+              ]
+            },
+            {
+              "id": "doubt",
+              "name": "怀疑",
+              "en": "doubt",
+              "representations": [
+                "doubt",
+                "question",
+                "suspect",
+                "be skeptical of",
+                "have doubts about"
+              ]
+            },
+            {
+              "id": "expectation",
+              "name": "预期",
+              "en": "expectation",
+              "representations": [
+                "expect",
+                "anticipate",
+                "foresee",
+                "await",
+                "look for",
+                "bank on"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emotion",
+      "name": "情感与态度",
+      "en": "Emotion and attitude",
+      "groups": [
+        {
+          "id": "emotion-feeling",
+          "name": "情感",
+          "en": "Emotion",
+          "leaves": [
+            {
+              "id": "liking",
+              "name": "喜爱",
+              "en": "liking",
+              "representations": [
+                "like",
+                "love",
+                "enjoy",
+                "be fond of",
+                "care for",
+                "delight in"
+              ]
+            },
+            {
+              "id": "dislike",
+              "name": "厌恶",
+              "en": "dislike",
+              "representations": [
+                "dislike",
+                "hate",
+                "detest",
+                "loathe",
+                "abhor",
+                "abominate"
+              ]
+            },
+            {
+              "id": "fear",
+              "name": "恐惧",
+              "en": "fear",
+              "representations": [
+                "fear",
+                "dread",
+                "be afraid of",
+                "be scared of",
+                "be frightened of"
+              ]
+            },
+            {
+              "id": "joy",
+              "name": "喜悦",
+              "en": "joy",
+              "representations": [
+                "rejoice",
+                "be glad",
+                "be pleased",
+                "exult",
+                "be delighted",
+                "be happy"
+              ]
+            },
+            {
+              "id": "sorrow",
+              "name": "悲伤",
+              "en": "sorrow",
+              "representations": [
+                "grieve",
+                "mourn",
+                "lament",
+                "be sad",
+                "sorrow",
+                "weep for"
+              ]
+            },
+            {
+              "id": "anger",
+              "name": "愤怒",
+              "en": "anger",
+              "representations": [
+                "be angry",
+                "resent",
+                "fume",
+                "seethe",
+                "rage",
+                "bristle"
+              ]
+            },
+            {
+              "id": "hope",
+              "name": "希望",
+              "en": "hope",
+              "representations": [
+                "hope",
+                "long",
+                "yearn",
+                "aspire",
+                "pine",
+                "be hopeful"
+              ]
+            },
+            {
+              "id": "surprise",
+              "name": "惊讶",
+              "en": "surprise",
+              "representations": [
+                "be surprised",
+                "marvel",
+                "be astonished",
+                "be amazed",
+                "be startled",
+                "be taken aback"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "emotion-evaluation",
+          "name": "态度与评价",
+          "en": "Attitude and evaluation",
+          "leaves": [
+            {
+              "id": "trust",
+              "name": "信任",
+              "en": "trust",
+              "representations": [
+                "trust",
+                "count on",
+                "have faith in",
+                "confide in",
+                "believe in"
+              ]
+            },
+            {
+              "id": "praise",
+              "name": "称赞",
+              "en": "praise",
+              "representations": [
+                "praise",
+                "commend",
+                "applaud",
+                "acclaim",
+                "speak well of",
+                "compliment"
+              ]
+            },
+            {
+              "id": "blame",
+              "name": "责备",
+              "en": "blame",
+              "representations": [
+                "blame",
+                "criticize",
+                "condemn",
+                "fault",
+                "censure",
+                "reproach"
+              ]
+            },
+            {
+              "id": "assessment",
+              "name": "评价",
+              "en": "assessment",
+              "representations": [
+                "regard as",
+                "rate",
+                "assess",
+                "deem",
+                "appraise",
+                "size up"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volition",
+      "name": "意愿与意图",
+      "en": "Volition",
+      "groups": [
+        {
+          "id": "volition-will",
+          "name": "意愿",
+          "en": "Will",
+          "leaves": [
+            {
+              "id": "desire",
+              "name": "想要",
+              "en": "desire",
+              "representations": [
+                "want",
+                "wish",
+                "desire",
+                "would like",
+                "feel like",
+                "care to"
+              ]
+            },
+            {
+              "id": "intention",
+              "name": "打算",
+              "en": "intention",
+              "representations": [
+                "intend",
+                "mean",
+                "plan",
+                "aim",
+                "have in mind",
+                "purpose"
+              ]
+            },
+            {
+              "id": "decision",
+              "name": "决定",
+              "en": "decision",
+              "representations": [
+                "decide",
+                "determine",
+                "resolve",
+                "settle on",
+                "fix on",
+                "make up one's mind"
+              ]
+            },
+            {
+              "id": "willingness",
+              "name": "愿意",
+              "en": "willingness",
+              "representations": [
+                "be willing",
+                "be ready",
+                "be prepared",
+                "consent",
+                "agree to"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "volition-choice",
+          "name": "抉择",
+          "en": "Choice",
+          "leaves": [
+            {
+              "id": "refusal",
+              "name": "拒绝",
+              "en": "refusal",
+              "representations": [
+                "refuse",
+                "decline",
+                "turn down",
+                "balk at",
+                "be unwilling",
+                "say no to"
+              ]
+            },
+            {
+              "id": "choice",
+              "name": "选择",
+              "en": "choice",
+              "representations": [
+                "choose",
+                "pick",
+                "select",
+                "opt for",
+                "elect",
+                "single out"
+              ]
+            },
+            {
+              "id": "preference",
+              "name": "偏好",
+              "en": "preference",
+              "representations": [
+                "prefer",
+                "favor",
+                "would rather",
+                "like better",
+                "lean toward",
+                "incline to"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modality",
+      "name": "情态",
+      "en": "Modality",
+      "groups": [
+        {
+          "id": "modality-epistemic",
+          "name": "认识情态",
+          "en": "Epistemic modality",
+          "leaves": [
+            {
+              "id": "possibility",
+              "name": "可能",
+              "en": "possibility",
+              "representations": [
+                "may",
+                "might",
+                "could",
+                "be possible",
+                "be conceivable"
+              ]
+            },
+            {
+              "id": "likelihood",
+              "name": "或然",
+              "en": "likelihood",
+              "representations": [
+                "be likely",
+                "be probable",
+                "should",
+                "be apt to",
+                "be liable to"
+              ]
+            },
+            {
+              "id": "necessity",
+              "name": "必然",
+              "en": "necessity",
+              "representations": [
+                "must",
+                "have to",
+                "be bound to",
+                "be certain to",
+                "be sure to"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "modality-deontic",
+          "name": "动力与道义",
+          "en": "Dynamic and deontic modality",
+          "leaves": [
+            {
+              "id": "ability",
+              "name": "能力",
+              "en": "ability",
+              "representations": [
+                "can",
+                "could",
+                "be able to",
+                "be capable of",
+                "know how to",
+                "be in a position to"
+              ]
+            },
+            {
+              "id": "permission",
+              "name": "许可",
+              "en": "permission",
+              "representations": [
+                "may",
+                "can",
+                "be allowed to",
+                "be permitted to",
+                "be free to"
+              ]
+            },
+            {
+              "id": "obligation",
+              "name": "义务",
+              "en": "obligation",
+              "representations": [
+                "should",
+                "ought to",
+                "must",
+                "have to",
+                "be supposed to",
+                "be obliged to",
+                "be required to"
+              ]
+            },
+            {
+              "id": "need",
+              "name": "需要",
+              "en": "need",
+              "representations": [
+                "need",
+                "require",
+                "call for",
+                "demand",
+                "necessitate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "社会互动",
+      "en": "Social interaction",
+      "groups": [
+        {
+          "id": "social-interplay",
+          "name": "协作与冲突",
+          "en": "Cooperation and conflict",
+          "leaves": [
+            {
+              "id": "help",
+              "name": "帮助",
+              "en": "help",
+              "representations": [
+                "help",
+                "assist",
+                "aid",
+                "support",
+                "lend a hand",
+                "give a hand"
+              ]
+            },
+            {
+              "id": "cooperation",
+              "name": "合作",
+              "en": "cooperation",
+              "representations": [
+                "cooperate",
+                "collaborate",
+                "work with",
+                "team up",
+                "join forces",
+                "pull together"
+              ]
+            },
+            {
+              "id": "conflict",
+              "name": "对抗",
+              "en": "conflict",
+              "representations": [
+                "fight",
+                "quarrel",
+                "clash",
+                "contend with",
+                "struggle with",
+                "come to blows"
+              ]
+            },
+            {
+              "id": "competition",
+              "name": "竞争",
+              "en": "competition",
+              "representations": [
+                "compete",
+                "vie with",
+                "rival",
+                "contest",
+                "race",
+                "jockey for"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "social-relation",
+          "name": "关系",
+          "en": "Relation",
+          "leaves": [
+            {
+              "id": "meeting",
+              "name": "遇见",
+              "en": "meeting",
+              "representations": [
+                "meet",
+                "encounter",
+                "run into",
+                "come across",
+                "bump into",
+                "come upon"
+              ]
+            },
+            {
+              "id": "guidance",
+              "name": "带领",
+              "en": "guidance",
+              "representations": [
+                "lead",
+                "guide",
+                "head",
+                "conduct",
+                "show the way",
+                "usher"
+              ]
+            },
+            {
+              "id": "compliance",
+              "name": "服从",
+              "en": "compliance",
+              "representations": [
+                "obey",
+                "comply with",
+                "abide by",
+                "submit to",
+                "defer to",
+                "heed"
+              ]
+            },
+            {
+              "id": "protection",
+              "name": "保护",
+              "en": "protection",
+              "representations": [
+                "protect",
+                "defend",
+                "guard",
+                "shield",
+                "look after",
+                "safeguard"
+              ]
+            },
+            {
+              "id": "union",
+              "name": "结合",
+              "en": "union",
+              "representations": [
+                "marry",
+                "wed",
+                "unite with",
+                "join with",
+                "partner with",
+                "couple with"
+              ]
+            },
+            {
+              "id": "separation",
+              "name": "分离",
+              "en": "separation",
+              "representations": [
+                "part",
+                "separate",
+                "split",
+                "divorce",
+                "break up",
+                "break with"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
