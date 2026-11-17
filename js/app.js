@@ -17,7 +17,6 @@ let visible = new Set();
 let autoOpen = new Set();
 let ancestors = new Map();
 let branchIds = [];
-let domIdOf = new Map();
 let spy = null;
 let currentId = "";
 
@@ -121,23 +120,18 @@ async function load() {
 
 function indexData() {
   ancestors = new Map();
-  domIdOf = new Map();
   branchIds = [];
   for (const cat of data.categories) {
     branchIds.push(cat.id);
     const catDom = `c-${cat.id}`;
-    domIdOf.set(cat.id, catDom);
     ancestors.set(catDom, [cat.id]);
     for (const group of cat.groups) {
       branchIds.push(group.id);
       collapsed.add(group.id);
       const groupDom = `g-${group.id}`;
-      domIdOf.set(group.id, groupDom);
       ancestors.set(groupDom, [cat.id, group.id]);
       for (const leaf of group.leaves) {
-        const leafDom = `d-${leaf.id}`;
-        domIdOf.set(leaf.id, leafDom);
-        ancestors.set(leafDom, [cat.id, group.id]);
+        ancestors.set(`d-${leaf.id}`, [cat.id, group.id]);
       }
     }
   }
@@ -204,7 +198,6 @@ function renderArticle() {
     el("p", { class: "label" }, ["不收录"]),
     el("ul", {}, data.meta.exclusions.map((item) => el("li", {}, [
       el("span", { class: "ex-name" }, [item.name]),
-      el("span", { class: "ex-reason" }, [item.reason]),
     ]))),
   ]);
 
@@ -359,7 +352,7 @@ function bindSpy() {
     visibleEntries.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
     setCurrent(visibleEntries[0].target.id);
   }, { rootMargin: "-12% 0px -75% 0px", threshold: [0, 0.2, 0.6] });
-  document.querySelectorAll(".cat, .group").forEach((node) => spy.observe(node));
+  document.querySelectorAll(".cat, .group, .leaf").forEach((node) => spy.observe(node));
 }
 
 function setCurrent(id) {

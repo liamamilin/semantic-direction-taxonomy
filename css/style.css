@@ -383,25 +383,22 @@ h1 {
 }
 
 .excluded ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.15rem;
   list-style: none;
-  padding: 0;
+  padding: 0.45rem 0;
   margin: 0;
+  border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
 .excluded li {
-  display: grid;
-  grid-template-columns: 9.2em 1fr;
-  gap: 0.4rem 1rem;
-  padding: 0.32rem 0;
-  border-top: 1px solid var(--line);
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
 .ex-name { font-weight: 600; }
-
-.ex-reason { color: var(--ink-soft); }
 
 .taxonomy { margin-top: 2.8rem; }
 
@@ -616,8 +613,6 @@ mark {
   h1 { font-size: 1.65rem; }
 
   .cat h2 { font-size: 1.5rem; }
-
-  .excluded li { grid-template-columns: 1fr; gap: 0.05rem; }
 
   .node-row, .leaf-link { min-height: 2.4rem; }
 }
